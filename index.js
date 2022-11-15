@@ -35,9 +35,9 @@ const HandleToggle = () => {
 
 //Navbar transparent on scroll
 window.addEventListener("scroll", ()=> {
-  
-  scrollTop =document.body.parentNode.scrollTop;
-  scrollTop>695?navbar.classList.add("act"):navbar.classList.remove("act");
+  scrollTop =window.scrollY;
+  let height = home.offsetHeight;
+  height-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
 })
 
 //Running Text

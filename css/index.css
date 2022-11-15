@@ -4,11 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
 }
 html {
   scroll-behavior: smooth;
 }
-
+a:focus, a:visited, a:active{
+  outline: none;
+}
 body{
   width: 100%;
   height: 400vh;
@@ -29,6 +32,11 @@ nav{
 body .container .act{
   background-color: #17171b;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+body .container .act ul li .active{
+  background-color: #F2474F;
+  color: #fff;
+  
 }
 nav section{
   display: flex;
@@ -83,8 +91,11 @@ nav ul li a{
   font-size: 14px;
   font-weight: bolder;
   color: #AFB4C2;
-  transition: 0.2s;
+  transition: 0.4s;
+  padding: 5px 15px;
   letter-spacing: 1px;
+  border-radius: 0px;
+  /* margin: 0 5px; */
 }
 nav ul li .active, nav ul li a:hover{
   color:#F2474F;
@@ -106,8 +117,6 @@ nav button{
   background-repeat: no-repeat;
   display: flex;
   gap: 200px;
-
-
   color: #fff;
 }
 .back .content{
@@ -407,4 +416,13 @@ justify-content: center;
   width: 15px;
   background-color: #F24432;
   transform: rotate(45deg);
+}
+
+
+/* contact form */
+
+.contact{
+  width: 100vw;
+  height: auto;
+  display: flex;
 }
