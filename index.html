@@ -52,7 +52,7 @@
       </li>
       
       <li>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
     </ul>
     <button class="men-btn active" onclick="HandleToggle()">
@@ -254,30 +254,31 @@
   </div>
 
   <!-- contact form -->
-  <div class="contact section">
+  <div class="contact section" id="contact">
     <h1>Contact Me</h1>
     <div class="whole">
     <div class="for">
       <h3>Send me a message</h3>
-      <form action="#">
+      <form action="#" class="contact_form">
         <div class="tags">
           <label for="">Name*</label>
-          <input type="text">
+          <input class="name" type="text">
        </div>
        <div class="tags">
         <label for="">Email*</label>
-        <input type="email">
+        <input class="email" type="email">
      </div>
      <div class="tags">
       <label for="">Phone*</label>
-      <input type="number">
+      <input class="phone" type="number">
      </div>
      <div class="tags">
      <label for="">Message*</label>
-     <textarea name="" id="" cols="10" rows="1"></textarea>
+     <textarea name="" class="msg" id="" columns="35" rows="1"></textarea>
      </div>
       </form>
-      <button type="submit">Submit</button>
+
+      <button type="submit" onclick="sendMsg()">Submit</button>
     </div>
 
     <div class="info">
@@ -298,10 +299,45 @@
   </div>
   </div>
 
+  <!-- fooder -->
+  <div class="fooder">
+    <div class="fi">
+      <h1>Alex <span>Tech</span></h1>
+      <div class="logo">
+        <div class="bor">
+          <iconify-icon class="ico" icon="dashicons:facebook-alt"></iconify-icon>
+        </div>
+        <div class="bor">
+          <iconify-icon class="ico" icon="akar-icons:linkedin-fill"></iconify-icon>
+        </div>
+        <div class="bor">
+          <iconify-icon class="ico git" icon="bxl:github"></iconify-icon>
+        </div>
+        <div class="bor">
+          <iconify-icon class="ico" icon="akar-icons:instagram-fill"></iconify-icon>
+        </div>
+      </div>
+    </div>
+    <div class="se">
+      <h2>Design and developed by <span>Alexander..</span></h2 readonly>
+    </div>
+    <div class="th">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
 </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="index.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

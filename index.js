@@ -58,3 +58,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+// contact information
+
+
+
+const sendMsg = (e) => {
+  // e.preventDefault();
+  const form = document.querySelector(".contact_form"),
+  name = document.querySelector(".name"),
+  email = document.querySelector(".email"),
+  phone = document.querySelector(".phone"),
+  msg = document.querySelector(".msg")
+
+// Email.send({
+// Host : "smtp.elasticemail.com",
+// Username : "forweb5434@gmail.com",
+// Password : "8C59DDD4680CB2E555117615F16F13F1F5E9",
+// To : 'forweb5434@gmail.com',
+// From : "guyninga@gmail.com",
+// Subject : "Contact from Alextech",
+// Body : msg.value
+// }).then(
+// message => alert(message)
+// );
+
+Email.send({
+  SecureToken : "25ded337-a195-4231-b1f4-f0234dffea54",
+  To : 'forweb5434@gmail.com',
+  From : email.value,
+  Subject : "Mail from Alextech",
+  Body : msg.value
+}).then(
+message => alert(message)
+);
+}

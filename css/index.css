@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 
 *{
   margin: 0;
@@ -48,7 +51,7 @@ nav section .logo{
   justify-content: center;
   gap: 15px;
 }
-nav section .logo .bor{
+nav section .logo .bor, .bor{
   height: 30px;
   cursor: pointer;
   width: 30px;
@@ -58,7 +61,7 @@ nav section .logo .bor{
   border-radius: 50%;
   
 }
-nav section .logo .bor .ico{
+nav section .logo .bor .ico, .bor .ico{
   border: 1.5px solid #7D8393;
   padding: 2px;
   border-radius: 50%;
@@ -66,7 +69,9 @@ nav section .logo .bor .ico{
   color: #7D8393;
   transition: 0.3s;
 }
-nav section .logo .bor .ico:hover {
+nav section .logo .bor .ico:hover,
+.bor .ico:hover
+ {
   border: 1.5px solid #F2474F;
   color: #F2474F;
 }
@@ -427,7 +432,7 @@ justify-content: center;
   background-color: #F7F7F7;
   display: flex;
   padding: 8% 0;
-  margin: 7% 0;
+  margin: 7% 0 0;
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins';
@@ -456,7 +461,7 @@ justify-content: center;
 .contact .whole .for form .tags{
   display: flex;
   flex-direction: column;
-  margin: 5% 10%;
+  margin: 5% 5%;
   justify-content: center;
 }
 .contact .whole .info{
@@ -470,7 +475,6 @@ justify-content: center;
   padding: 50px;
   align-items: left;
   border-radius: 0 10px 10px 0;
-
 }
 .contact .whole .for h3{
   font-size: 25px;
@@ -478,7 +482,19 @@ justify-content: center;
 }
 .contact input, .contact textarea{
   border: none;
+  resize: none;
+  padding: 7px 0 2px 7px;
+  outline: none;
+  font-family: 'poppins';
+  font-size: 14px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.contact textarea{
+  width: 600px;
+}
+.contact label{
+  font-size: 18px;
+  font-weight: 500;
 }
 .contact .whole .info h3{
   padding: 0% 5% 5% 5%;
@@ -501,3 +517,83 @@ justify-content: center;
 .contact .whole .for, .contact .whole .info{
   padding: 5% 0;
 }
+.contact button{
+  background-color: #F2474F;
+  border: none;
+  width: 100px;
+  height: 35px;
+  margin: 5% 0 0;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contact button:hover{
+  background-color: #f2474fd1;
+}
+
+/* footer */
+
+.fooder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 2% ;
+  background-color: #343A3F;
+}
+.fooder .fi{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.fooder .fi h1{
+  font-family: 'Black Ops One', cursive;
+  font-size: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.fooder .fi h1 span{
+  color: #FF0D16;
+}
+.fooder .fi .logo {
+  display: flex;
+  gap: 25px;
+}
+.fooder .fi .logo .bor iconify-icon{
+  font-size: 30px;
+}
+
+.se h2 span{
+  font-family: 'Sacramento', cursive;
+  font-size: 45px;
+  padding:  0  0 0 10px;
+  font-weight: 500;
+}
+.se h2{
+  color: #fff;
+  font-family: 'poppins';
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.th ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.th ul li{
+  list-style: none;
+}
+.th ul li a{
+text-decoration: none;
+font-size: 19px;
+color: rgb(125, 131, 147);
+font-family: 'poppins';
+}
+.th ul li a:hover{
+  color: #F2474F;
+  }
