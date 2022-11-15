@@ -138,7 +138,7 @@
     padding: 2% 0;
   }
   .skills{
-    margin: 15% 0 0 0;
+    margin: 15% 0 25% 0;
     height: auto;
     text-align: center;
   }
@@ -157,5 +157,17 @@
   }
   .skills  .skill .progress, .skills .tools .tool .progress{
     height: 13px;
+  }
+
+  /* contact css */
+
+  .whole{
+    flex-direction: column;
+  }
+  .contact .whole .for form{
+    justify-content: center;
+  }
+  .contact .whole .info, .contact .whole .for{
+    width: 100%;
   }
 }

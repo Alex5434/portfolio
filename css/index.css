@@ -424,5 +424,80 @@ justify-content: center;
 .contact{
   width: 100vw;
   height: auto;
+  background-color: #F7F7F7;
   display: flex;
+  padding: 8% 0;
+  margin: 7% 0;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.contact .whole{
+  display: flex;
+  justify-content: center;
+  padding: 5% 10%;
+  width: 100%;
+  height:   30%;
+}
+.contact .whole .for form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .whole .for{
+  display: flex;
+  width: 60%;  
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0 0 10px;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .whole .for form .tags{
+  display: flex;
+  flex-direction: column;
+  margin: 5% 10%;
+  justify-content: center;
+}
+.contact .whole .info{
+  background-color: #f24951;
+  width: 35%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  flex-direction: column;
+  padding: 50px;
+  align-items: left;
+  border-radius: 0 10px 10px 0;
+
+}
+.contact .whole .for h3{
+  font-size: 25px;
+  font-weight: 500;
+}
+.contact input, .contact textarea{
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.contact .whole .info h3{
+  padding: 0% 5% 5% 5%;
+  font-weight: 500;
+  font-size: 25px;
+}
+.contact .whole .info .in{
+  display: flex;
+  padding: 2% 5%;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.contact .whole .info .in iconify-icon{
+  font-size: 27px;
+}
+.contact .whole .info .in p{
+  font-size: 17px;
+}
+.contact .whole .for, .contact .whole .info{
+  padding: 5% 0;
 }
