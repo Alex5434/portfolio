@@ -11,6 +11,12 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        emailjs.init('jt2lifTm3oZK1KIH3');
+    })();
+    </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortFoli</title>
 </head>
@@ -262,23 +268,23 @@
       <form action="#" class="contact_form">
         <div class="tags">
           <label for="">Name*</label>
-          <input class="name" type="text">
+          <input id="fromname" type="text">
        </div>
        <div class="tags">
         <label for="">Email*</label>
-        <input class="email" type="email">
+        <input id="email_id" type="email">
      </div>
      <div class="tags">
       <label for="">Phone*</label>
-      <input class="phone" type="number">
+      <input id="phone" type="number">
      </div>
      <div class="tags">
      <label for="">Message*</label>
-     <textarea name="" class="msg" id="" columns="35" rows="1"></textarea>
+     <textarea name="" id="message" id="" columns="35" rows="1"></textarea>
      </div>
       </form>
 
-      <button type="submit" onclick="sendMsg()">Submit</button>
+      <button type="submit" onclick="sendMail()">Submit</button>
     </div>
 
     <div class="info">
@@ -336,7 +342,6 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="index.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
