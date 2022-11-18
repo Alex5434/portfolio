@@ -51,7 +51,7 @@ nav section .logo{
   justify-content: center;
   gap: 15px;
 }
-nav section .logo .bor, .bor{
+nav section .logo .bor a, .bor{
   height: 30px;
   cursor: pointer;
   width: 30px;
@@ -249,7 +249,7 @@ nav button{
 
 .about .sec .para button{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 160px;
   height: 40px;
   border-radius: 0;
@@ -258,13 +258,26 @@ nav button{
   letter-spacing: .5px;
   border: 2px solid #F2474F;
   background: #fff;
-  color: #F2474F;
   justify-content: center;
-  transition: 0.3s ease-in;
+  align-items: center;
   cursor: pointer;
-  gap: 5px;
+  color: #F2474F;
+  transition: 0.3s ease-in;
+
 }
-.about .sec .para button:hover{
+.about .sec .para  a{
+  text-decoration: none;
+  color: #F2474F;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  width: 160px;
+  height: 100%;
+  height: max-content;
+}
+.about .sec .para a button:hover{
   background-color: #F2474F;
   color: #fff;
   border: 2px solid #F2474F;

@@ -82,7 +82,7 @@ window.addEventListener("scroll", () => {
   back = document.querySelector(".backtotop");
   if((window.scrollY)>1000){
     back.style.display = "block";
-  }
+    }
   else{
     back.style.display = "none";
   }
