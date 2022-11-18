@@ -2,6 +2,7 @@
 
 
 @media screen and (max-width: 900px){
+
   nav section .logo{
     display: 
     none;
@@ -21,23 +22,26 @@
     width: 95%;
     height: 100%;
     z-index: -1;
+    align-items: flex-end;
    
   }
   nav ul li{
-  padding: 8px 0;
-  width: 100%;
-  background: #fff;
+  width: 50%;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #F2474F;
   }
   nav ul li a{
     color: #F2474F;
     position: relative;
     right: 0;
+
     align-items: center;
-    margin-right: 3%;
+    text-align: center;
+    width:100%;
+    height: 100%;
   }
   nav ul li .active{
     background:none;
@@ -109,6 +113,11 @@
   }
   .about .sec .para p{
     font-size: 22px;
+  }
+  .about .sec .para a button:hover{
+    background-color: #fff;
+    color: #F2474F;
+    border: 2px solid #F2474F;
   }
   .projects{
     padding: 10% 0;
@@ -237,10 +246,18 @@
     font-size: 9px;
     }
     .backtotop{
-      height: 40px;
-      width: 40px;
-      right: 5%;
-      bottom: 3%;
+      height: 45px;
+      width: 45px;
+      right: 6%;
+      bottom: 4%;
+    }
+    .contact .whole .for form button{
+      margin: 0;
+    }
+    .back .content .explore:hover{
+      color: #F2474F;
+      background: transparent;
+      border: 1px solid #F2474F;
     }
 }
 

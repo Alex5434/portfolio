@@ -39,6 +39,7 @@ body .container .act{
 body .container .act ul li .active{
   background-color: #F2474F;
   color: #fff;
+  border-radius: 2px;
   
 }
 nav section{
@@ -183,7 +184,7 @@ nav button{
 .back .content .explore:hover{
   color: #17171b;
   background: #F2474F;
-  border: 1px solid F2474F;
+  border: 1px solid #F2474F;
 }
 
 /* About me css*/
@@ -463,6 +464,9 @@ justify-content: center;
 .contact .whole .for form{
   display: flex;
   flex-wrap: wrap;
+}
+.contact .whole .for form button{
+  margin-left: 45%;
 }
 .contact .whole .for{
   display: flex;

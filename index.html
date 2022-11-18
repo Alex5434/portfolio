@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image" href="images/modified.jpeg">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     })();
     </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortFoli</title>
+  <title>Alex Tech</title>
 </head>
 <body id="body">
   <div class="container">
@@ -48,26 +49,26 @@
     <ul class="list">
       
       <li>
-        <a href="#home" class="active">Home</a>
+        <a href="#home"  class="active">Home</a>
       </li>
       
       <li>
-        <a href="#about">About</a>
+        <a href="#about" >About</a>
       </li>
       
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#projects" >Projects</a>
       </li>
       
       <li>
-        <a href="#skills">Skills</a>
+        <a href="#skills" >Skills</a>
       </li>
       
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact" >Contact</a>
       </li>
     </ul>
-    <button class="men-btn active" onclick="HandleToggle()">
+    <button class="men-btn" onclick="HandleToggle()">
     <iconify-icon class="menu-btn" icon="bytesize:menu"></iconify-icon>
   </button>
   </nav>
@@ -262,7 +263,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <!-- contact form -->
   <div class="contact section" id="contact">
@@ -273,30 +273,31 @@
       <form action="#" class="contact_form">
         <div class="tags">
           <label for="">Name*</label>
-          <input id="fromname" type="text">
+          <input id="fromname" type="text" required>
        </div>
        <div class="tags">
         <label for="">Email*</label>
-        <input id="email_id" type="email">
+        <input id="email_id" type="email" required>
      </div>
      <div class="tags">
       <label for="">Phone*</label>
-      <input id="phone" type="number">
+      <input id="phone" type="number" required>
      </div>
      <div class="tags">
      <label for="">Message*</label>
      <textarea name="" id="message" id="" columns="35" rows="1"></textarea>
-     </div>
+     </div> 
+     <button type="submit" onclick="sendMail()">Submit</button>
       </form>
 
-      <button type="submit" onclick="sendMail()">Submit</button>
+     
     </div>
 
     <div class="info">
       <h3>General information</h3>
       <div class="in">
         <iconify-icon icon="entypo:location-pin"></iconify-icon>
-        <p>9/136-3,Thathanur,Udayarpalaym, Ariyalur, Tamil Nadu, 621 804</p>
+        <p>9/136-3, Thathanur, Udayarpalaym, Ariyalur, Tamil Nadu, 621 804</p>
       </div>
       <div class="in">
         <iconify-icon icon="carbon:phone-filled"></iconify-icon>
@@ -357,6 +358,6 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="index.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
 </body>
 </html>
