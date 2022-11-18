@@ -196,6 +196,7 @@ nav button{
   align-items: center;
   justify-content: center;
   position: relative;
+  /* z-index:5; */
 }
 .about h1, .projects h1, .skills h1{
   font-family: 'Montserrat';
@@ -224,7 +225,7 @@ nav button{
   border-radius: 10px;
 }
 .about .sec .para{
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -269,6 +270,8 @@ nav button{
   border: 2px solid #F2474F;
 }
 
+
+/* projects */
 .projects{
   position: relative;
   width: 100vw;
@@ -441,7 +444,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   padding: 5% 10%;
-  width: 100%;
+  width: 90%;
   height:   30%;
 }
 .contact .whole .for form{
@@ -460,8 +463,9 @@ justify-content: center;
 }
 .contact .whole .for form .tags{
   display: flex;
+  /* width: 80%; */
   flex-direction: column;
-  margin: 5% 5%;
+  margin: 4% 5%;
   justify-content: center;
 }
 .contact .whole .info{
@@ -498,6 +502,7 @@ justify-content: center;
 }
 .contact .whole .info h3{
   padding: 0% 5% 5% 5%;
+  text-align: center;
   font-weight: 500;
   font-size: 25px;
 }
@@ -542,6 +547,7 @@ justify-content: center;
   justify-content: space-between;
   align-items: center;
   padding: 2% 5% 2% ;
+  /* height: 5%; */
   background-color: #343A3F;
 }
 .fooder .fi{

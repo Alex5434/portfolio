@@ -3,7 +3,9 @@ let list = document.querySelector(".list");
 let navbar = document.querySelector("nav");
 let hom = document.querySelector(".back")
 var scrollTop;
-let joe = hom.offsetHeight;
+var element = document.querySelector(".fooder")
+var lash = element.offsetTop;
+console.log(lash);
 
 AOS.init();
 
@@ -36,6 +38,7 @@ const HandleToggle = () => {
 //Navbar transparent on scroll
 window.addEventListener("scroll", ()=> {
   scrollTop =window.scrollY;
+  console.log(scrollTop);
   let height = home.offsetHeight;
   height-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
 })

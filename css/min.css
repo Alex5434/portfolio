@@ -237,3 +237,11 @@
     font-size: 9px;
     }
 }
+
+
+
+@media screen and (max-width: 900px) , screen and (max-height: 400px){
+  .projects{
+    margin-top: 40%;
+  }
+}
