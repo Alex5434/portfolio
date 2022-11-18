@@ -622,4 +622,7 @@ font-family: 'poppins';
   background-color: #F2474F;
   font-size: 20px;
   cursor: pointer;
+  display: none;
+  transition: 0.5s;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }

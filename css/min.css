@@ -236,6 +236,12 @@
   .th ul li a{
     font-size: 9px;
     }
+    .backtotop{
+      height: 40px;
+      width: 40px;
+      right: 5%;
+      bottom: 3%;
+    }
 }
 
 

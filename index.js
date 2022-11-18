@@ -38,7 +38,6 @@ const HandleToggle = () => {
 //Navbar transparent on scroll
 window.addEventListener("scroll", ()=> {
   scrollTop =window.scrollY;
-  console.log(scrollTop);
   let height = home.offsetHeight;
   height-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
 })
@@ -78,7 +77,14 @@ const sendMail = () => {
 }
 
 
-const backtotop = () => {
-  scrollT =window.scrollY;
-  console.log(scrollT);
+// back to top button display and 
+window.addEventListener("scroll", () => {
+  back = document.querySelector(".backtotop");
+  if((window.scrollY)>1000){
+    back.style.display = "block";
+  }
+  else{
+    back.style.display = "none";
+  }
 }
+)
