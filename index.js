@@ -5,7 +5,7 @@ let hom = document.querySelector(".back")
 var scrollTop;
 var element = document.querySelector(".fooder")
 var lash = element.offsetTop;
-console.log(lash);
+// console.log(lash);
 
 AOS.init();
 
@@ -75,4 +75,10 @@ const sendMail = () => {
   emailjs.send("service_tl4yihs", "template_14tanrg", params).then(function(res){
     alert("success"+ res.status)
   })
+}
+
+
+const backtotop = () => {
+  scrollT =window.scrollY;
+  console.log(scrollT);
 }

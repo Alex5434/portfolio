@@ -245,3 +245,9 @@
     margin-top: 40%;
   }
 }
+
+@media screen and (max-width: 900px) , screen and (max-height: 380px){
+  .tags{
+    width: 80%;
+  }
+}
