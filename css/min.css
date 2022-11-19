@@ -23,7 +23,7 @@
     height: 100%;
     z-index: -1;
     align-items: flex-end;
-   
+    transform: translateX(100%);
   }
   nav ul li{
   width: 50%;

@@ -1,6 +1,7 @@
 let menu = document.querySelector(".men-btn");
 let list = document.querySelector(".list");
 let navbar = document.querySelector("nav");
+let navbarul = document.querySelector("nav ul");
 let hom = document.querySelector(".back")
 var scrollTop;
 var element = document.querySelector(".fooder")
