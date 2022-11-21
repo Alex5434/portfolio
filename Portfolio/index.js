@@ -1,7 +1,6 @@
 let menu = document.querySelector(".men-btn");
 let list = document.querySelector(".list");
 let navbar = document.querySelector("nav");
-let navbarul = document.querySelector("nav ul");
 let hom = document.querySelector(".back")
 var scrollTop;
 var element = document.querySelector(".fooder")
@@ -18,7 +17,6 @@ window.onscroll = () => {
   let offset = sec.offsetTop-100;
   let height = sec.offsetHeight;
   let id = sec.getAttribute("id");
-  console.log(sec);
   if(top >= offset && top < offset + height){
     links.forEach(link => {
       link.classList.remove("active");

@@ -16,14 +16,14 @@
   nav ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     position: absolute;
     margin-top: 170px;
     width: 95%;
     height: 100%;
     z-index: -1;
     align-items: flex-end;
-    transform: translateX(100%);
+   
   }
   nav ul li{
   width: 50%;
@@ -94,7 +94,7 @@
     position: absolute;
     align-items: center;
     justify-content: center;
-    left:18%;
+    left:15%;
     right: 55px;
     border-radius: 150px;
     top: 0px;
