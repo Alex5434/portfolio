@@ -109,3 +109,15 @@ window.addEventListener("scroll", () => {
   }
 }
 )
+
+//count the visitors of web
+
+const count = document.getElementById("count");
+updatecount();
+function updatecount(){
+  fetch('https://api.countapi.xyz/update/alex/alextech/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    count.innerHTML = res.value;
+  });
+}

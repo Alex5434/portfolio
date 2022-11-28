@@ -259,6 +259,15 @@
       background: transparent;
       border: 1px solid #F2474F;
     }
+    .views{
+      gap: 0px;
+    }
+    .views p{
+      font-size: 16px;
+    }
+    .views h1{
+      font-size: 30px;
+    }
 }
 
 
