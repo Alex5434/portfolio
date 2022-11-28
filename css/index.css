@@ -12,12 +12,6 @@
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-  width: 0px;
-}
-a:focus, a:visited, a:active{
-  outline: none;
-}
 body{
   width: 100%;
   height: 400vh;
