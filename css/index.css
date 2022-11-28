@@ -12,6 +12,9 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  width: 0px;
+}
 a:focus, a:visited, a:active{
   outline: none;
 }
