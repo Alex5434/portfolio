@@ -101,7 +101,7 @@
     text-align: center;
   }
   .about .sec .para{
-    height: 460px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +112,9 @@
     padding: 100px 30px 0px 30px;
   }
   .about .sec .para p{
-    font-size: 22px;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 2px;
   }
   .about .sec .para a button:hover{
     background-color: #fff;
