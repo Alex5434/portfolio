@@ -75,7 +75,7 @@ window.addEventListener("scroll", ()=> {
 
 //Running Text
 var typed = new Typed(".ran",{
-  strings: ["web developer", "ui/ux designer", "mern stack developer"],
+  strings: ["mern developer", "ui/ux designer", "web developer"],
   typeSpeed:140,
   backSpeed:90,
   loop:true
