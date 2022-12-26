@@ -116,7 +116,7 @@ nav button{
   height: 100vh;
   background:linear-gradient(to top, rgba(0,0,0,0.95),rgba(0,0,0,0.5)),url('/images/background.jpg');
   background-size: cover;
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
   display: flex;
   gap: 200px;
