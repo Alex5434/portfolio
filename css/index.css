@@ -67,6 +67,7 @@ nav section .logo .bor .ico, .bor .ico{
   color: #7D8393;
   transition: 0.3s;
 }
+
 nav section .logo .bor .ico:hover,
 .bor .ico:hover
  {
@@ -343,6 +344,22 @@ nav button{
 .projects .cards .card .btn{
 display: flex;
 justify-content: center;
+gap: 20px;
+}
+.projects .cards .card .btn .btn-git{
+  background-color: #0c0e10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: underline #000000;
+  transition: 0.3s ease;
+}
+.projects .cards .card .btn .btn-git:hover{
+  text-decoration: underline #fff;
+}
+.projects .cards .card .btn .btn-git iconify-icon{
+  font-size: 20px;
 }
 .projects .cards .card img{
   width:280px;
