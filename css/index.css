@@ -316,10 +316,11 @@ nav button{
 }
 .projects .cards .card:hover{
   /* scale: 1.02; */
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.3);
   border-radius: 0;
 }
+
 .projects .cards .card h3{
   padding: 5% 0 3% 0;
   font-family: poppins;
@@ -364,6 +365,7 @@ gap: 20px;
 .projects .cards .card img{
   width:280px;
   height:200px;
+  transition: 1s ease-in;
 }
 
 .projects .cards .card button{
@@ -379,6 +381,18 @@ gap: 20px;
 
 .projects .cards .card button:hover{
   text-decoration: underline;
+}
+.devpro{
+  font-size: 30px;
+  font-family: 'Montserrat';
+  color: #17171b;
+  padding: 3% 0 0 0;
+}
+.fig{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
 }
 
 
