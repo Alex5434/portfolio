@@ -95,6 +95,7 @@ const sendMail = () => {
   emailjs.send("service_tl4yihs", "template_14tanrg", params).then(function(res){
     alert("success"+ res.status)
   })
+  document.contact.reset();
 }
 
 
